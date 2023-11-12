@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./jquery/jquery-3.6.0.min.js"></script>
+    <title>Pizzas Full Stack</title>
+  </head>
+  <body>
+    <header class="header">
+        <img id="imgLogo" src="./images/logoPizza.png" alt="pizzLogo" >
+        <h1 id="titlePizzaPlace">Pizzas Full Stack</h1>
+   </header>
+    <h2>Datos Cliente</h2>
+
+    <form method="post" action="http://localhost:5000/pizza" id="form">
+    <div class="datosPersonales">
+      <div class="inputClass">
+        <label for="nombreCliente" id="labelNombre">Nombre</label>
+        <input  type="text" id="nombreCliente" name="p1" >
+      </div>
+      <div class="inputClass" id="labelApellido">
+        <label for="apellidoCliente">Apellidos</label>
+        <input type="text" id="apellidoCliente" name="p2" >
+      </div>
+      <div class="inputClass">
+      <label for="fechaNac">Fecha Nacimiento</label>
+      <input type="date" id="fechaNac" name="p3" >
+    </div>
+        <div class="inputClass">
+        <label for="phone">Numero de Telefono</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="666-66-66-66">
+      </div>
+      <div class="inputClass">
+        <label for="address">Direccion</label>
+        <textarea rows="5" cols="100" id="address" name="p5"></textarea>
+      </div>
+    </div>
+
+      <h2>Datos Pedido</h2>
+      <div class="datosPedido">
+      <div >
+        <label for="pizzaSize">Tamaño Pizza</label>
+        <select id="pizzaSize"  name="p6">
+            <option id="small">Pequeña</option>
+            <option id="medium">Mediana</option>
+            <option id="large">Grande</option>
+        </select>
+      </div>
+      <div>
+        <h5 >Ingredientes</h5>
+        <div>
+        <label for="ingr1">Jamón York</label>
+        <input type="checkbox" id="ingr1" name="p7">
+      </div>
+      <div>
+        <label for="ingr2">Champiñones</label>
+        <input type="checkbox" id="ingr2" name="p8">
+      </div>
+      <div>
+        <label for="ingr3">Peperoni</label>
+        <input type="checkbox" id="ingr3" name="p9">
+      </div>
+      <div>
+        <label for="ingr4">Aceitunas</label>
+        <input type="checkbox" id="ingr4" name="p10">
+      </div>
+      </div>
+    </div>
+      <button id="botonEnviar" type="submit">Enviar Datos</button>
+    </form>
+
+    <script src="appjquery.js"></script>
+  </body>
+</html>
+

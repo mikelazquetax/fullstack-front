@@ -1,0 +1,47 @@
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.header{
+    display: flex;
+    align-items: center; 
+
+}
+
+    
+#titlePizzaPlace{
+    color: green;
+    margin-left: 20px;
+}
+
+.datosPersonales{
+    display: block;
+    background-color: #55ccff;
+}
+
+.datosPersonales div{
+        padding: 10px;
+        margin: 10px;
+}
+
+.datosPedido{
+    display: block;
+    background-color: #40ccbb;
+}
+
+.datosPedido div{ 
+    padding: 10px;
+    margin: 10px;
+}
+.inputClass{
+    display: flex;
+    align-items: center; 
+    margin: 2px;
+}
+.inputClass label{
+margin-right: 10px;
+}
+
+.labelStyleNombre{
+    color: red;
+}
