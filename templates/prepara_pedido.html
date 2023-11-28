@@ -42,12 +42,13 @@
       <div class="datosPedido">
       <div >
         <label for="pizzaSize">Tamaño Pizza</label>
-        <select id="pizzaSize"  name="p6">
-            <option id="small">Pequeña</option>
-            <option id="medium">Mediana</option>
-            <option id="large">Grande</option>
+        <select id="pizzaSize" name="p6" action="http://localhost:5000/checksize" >
+            <option id="small">S</option>
+            <option id="medium">M</option>
+            <option id="large">L</option>
             <option id="xxl">XXL</option>
         </select>
+        <span id="resultado_tamano"></span>
       </div>
       <div>
         <h5 >Ingredientes</h5>

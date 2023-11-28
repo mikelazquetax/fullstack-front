@@ -45,3 +45,13 @@ margin-right: 10px;
 .labelStyleNombre{
     color: red;
 }
+
+.disponibilidad{
+    color: red;
+    font-weight: bolder;
+}
+
+.disponibilidadok{
+    color: black;
+}
+
