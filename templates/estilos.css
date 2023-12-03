@@ -15,28 +15,47 @@
 }
 
 .datosPersonales{
-    display: block;
-    background-color: #55ccff;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+} 
 
 .datosPersonales div{
-        padding: 10px;
-        margin: 10px;
+    padding: 10px;
+    margin: 10px;
 }
 
-.datosPedido{
+/*.datosPedido{
     display: block;
     background-color: #40ccbb;
-}
+} */
 
 .datosPedido div{ 
     padding: 10px;
     margin: 10px;
+    display: flex;
+  
 }
+
+.datosPedido div select{ 
+
+    width: 50%;
+}
+
+.ingredientes{ 
+
+    display: flex;
+    flex-direction: column;
+  
+}
+
 .inputClass{
     display: flex;
     align-items: center; 
     margin: 2px;
+    width: 50%  ;
+    justify-content: center;
 }
 .inputClass label{
 margin-right: 10px;
@@ -55,3 +74,35 @@ margin-right: 10px;
     color: black;
 }
 
+.form-control:hover{
+    border-color: red;
+    border-width: 2px;
+}
+
+.col-6{
+    display: flex;align-items: center; 
+    margin: 2px;
+    width: 50%  ;
+    justify-content: center;
+}
+
+
+
+.form-label{
+    margin-right: 15px;
+}
+
+.form-check-label{
+    margin-right: 10px;
+}
+
+.divbtn{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#resultado_tamano{
+    margin-left: 10px;
+}
