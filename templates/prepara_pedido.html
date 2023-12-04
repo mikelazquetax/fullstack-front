@@ -10,12 +10,31 @@
     <title>Pizzas Full Stack</title>
   </head>
   <body>
-    <header class="header">
-        <img id="imgLogo" src="./images/logoPizza.png" alt="pizzLogo" >
-        <h1 id="titlePizzaPlace">Pizzas Full Stack</h1>
-   </header>
-    <h2>Datos Cliente</h2>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <!--  <img id="imgLogo" src="./images/logoPizza.png" alt="pizzLogo" >
+        <h1 id="titlePizzaPlace">Pizzas Full Stack</h1>--->
+        <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img id="imgLogo" src="./images/logoPizza.png" alt="pizzLogo" >
+        <span class="fs-4">Pizza Full-Stack</span>
 
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a class="nav-link active" active>Home</a></li>
+        </ul>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a class="nav-link" active>Pizzas</a></li>
+        </ul> 
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a class="nav-link" active>Desserts</a></li>
+        </ul>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a class="nav-link" active>Contact Us</a></li>
+        </ul>
+     
+        </a>
+
+   </header>
+    <h2 class="p-3 mb-2 bg-primary text-white">Datos Cliente</h2>
+    
     <form method="post" action="http://localhost:5000/pizza" id="form" class="row g-3 mt-3">
     <div class="datosPersonales">
       <div class="col-6">
@@ -40,7 +59,7 @@
       </div>
     </div>
 
-      <h2>Datos Pedido</h2>
+      <h2  class="p-3 mb-2 bg-primary text-white">Datos Pedido</h2>
       <div class="datosPedido">
       <div >
         <label for="pizzaSize" class="form-check-label">Tamaño Pizza</label>
@@ -53,7 +72,7 @@
         <span id="resultado_tamano"></span>
       </div>
       <div class="ingredientes">
-        <h5 >Ingredientes</h5>
+        <h5 class="text-primary" >Ingredientes</h5>
         <div>
         <label for="ingr1" class="form-check-label">Jamón York</label>
         <input type="checkbox" id="ingr1" name="p7" class="form-check-input">
